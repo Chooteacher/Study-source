@@ -1,0 +1,7 @@
+.NEWS_STAND {
+  display: inline-block;
+  margin: auto;
+}
+.NEWS_STAND li img {
+  width: 80px;
+}

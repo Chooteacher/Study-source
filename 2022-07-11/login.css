@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  width: 500px;
+  height: 580px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin-left: 50px;
+}
+.bg-color {
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  padding: 10px;
+  border: 1;
+  outline: none;
+  display: block;
+}

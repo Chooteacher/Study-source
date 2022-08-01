@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.parents {
+  position: relative;
+  width: 300px;
+}
+
+.search {
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.glass {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 17px;
+  margin: 0;
+}
+
+/* 3. <input> 스타일링
+     - 가로는 부모 크기의 100% 가 되게 지정
+     - 테두리 두께는 1px, 색깔은 #bbb
+     - 테두리 반경은 8px
+     - 테두리 내부 여백은 상, 하 → 10px / 좌, 우 → 12px
+     - 글씨 크기는 14px
+
+   4. <div> 스타일링
+     - <div> 요소는 돋보기 아이콘 요소를 감싸고 있음
+     - 돋보기 아이콘 요소는 <div> 요소, 즉 부모를 기준으로 상대적으로 위치해야함
+     - position: relative; 속성을 부여
+     - 가로는 300px 로 지정
+
+   5. <img> 스타일링
+     - 부모인 <div> 요소를 기준으로 절대적인 위치에 배치
+     - position: absolute; 속성을 부여
+     - 이미지의 위치는 부모의 요소에 대해 위에서 10px, 오른쪽에서 12px
+     - 이미지 크기는 17px
+
+   6. box-sizing 조정
+     - 돋보기 아이콘의 위치가 생각보다 좌측으로 위치해있음
+     - 전체 요소에 box-sizing: border-box; 를 부여하여 위치를 조정
+     - cf. Box Model
+ */

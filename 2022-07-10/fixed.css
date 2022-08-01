@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  padding-top: 48px;
+  height: 200vh;
+  background-color: #efefef;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 48px;
+  background-color: rgba(45, 45, 45, 0.95);
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+}
+
+/* 1. <header> 스타일링
+   - position 속성에 fixed 값을 부여
+   - 브라우저 상단에 고정되도록 top, left, right 값을 부여
+   - 높이는 48px 로 지정
+   - 배경색은 rgba(45, 45, 45, 0.95) 로 지정
+   - <header> 요소가 고정 되는지 확인
+   - 요소에 투명도를 추가해서 뒤로 다른 요소가 올라가는 것이 살짝 보임
+   
+   2. <img> 스타일링
+   - 사과 아이콘을 <header>를 기준으로 위치
+   - position을 absolute로 지정
+   - % 단위를 사용해서 위치를 이동
+   - left: 50%; 을 부여하여 부모 너비의 50% 만큼 오른쪽으로 이동
+   - 부모의 너비가 100px이었다면, 이미지가 left: 50px으로 이동한다는 뜻
+   - 사과 이미지의 왼쪽 시작선이 50px 에서 시작하게 됨. 그래서 사과가 차지하는 영역은 50% + 20px
+   - 한가운데 지점에서 이미지가 시작하고 20px의 너비만큼 차지 했으니 이미지의 중심점이 한가운데가 아님
+   - 다시 사과 이미지 너비의 반 만큼 왼쪽으로 이동시켜 한가운데로 위치하게 합니다. margin-left: -10px;를 추가
+   
+   3. 마지막 정리
+   - position이 absolute이거나 fixed가 되면 주변의 요소에 상관없이 위치
+   - 그래서 해당 영역이 무의미해지면서 다른 요소들과 겹치게 됨
+   - 이를 해결하기 위한 두 가지 방법
+     - 1) body에 padding-top 부여
+     - 2) 겹쳐 보이는 요소에 margin-top 부여
+   - body에 padding-top 을 <header> 요소의 높이인 48px 만큼 띄움
+*/
